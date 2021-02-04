@@ -11,10 +11,10 @@ function randomUser() {
             const userLocation = `${user.location.city}, ${user.location.state}, ${user.location.country}.`
             document.getElementById("picture").src = userDP
             document.getElementById("user_name").innerText = userName
-            document.getElementById("user_birthday").innerText = userBirthday
-            document.getElementById("user_email").innerText = userEmail
-            document.getElementById("user_phone").innerText = userCell
-            document.getElementById("user_address").innerText = userLocation
+            document.getElementById("user_birthday").innerText = "Birthday : " + userBirthday
+            document.getElementById("user_email").innerText = "Email : " + userEmail
+            document.getElementById("user_phone").innerText = "Phone : " + userCell
+            document.getElementById("user_address").innerText = "Address : " + userLocation
         })
 }
 randomUser()
